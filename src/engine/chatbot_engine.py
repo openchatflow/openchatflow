@@ -59,7 +59,8 @@ def nb_pred_top3(query, nb_model, chatbot_data):
 
 
 def remove_punctuation(text):
-    punct_re_escape.sub('', text)
+    text = punct_re_escape.sub('', text)
+    return text
 
 
 def ascii_normalize(text):

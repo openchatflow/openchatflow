@@ -1,6 +1,6 @@
 from engine.chabot_data import MyChatbotData
-from engine.chatbot_engine import get_pred, get_xs_ys, train, UNK
-from actions.functions import get_actions
+from engine.chatbot_engine import get_pred, get_xs_ys, train, remove_punctuation, UNK
+from actions.basic_functions import get_actions
 
 import json
 import os
@@ -30,6 +30,7 @@ chatbot_data, nb_model = init()
 def message_func(message):
     query = message.text
     pred = get_pred(query, nb_model, chatbot_data)
+    query = remove_punctuation(query)
     answer = get_actions(pred, query, UNK)
     bot.send_message(message.chat.id, answer)
 
