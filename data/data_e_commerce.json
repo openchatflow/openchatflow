@@ -1,0 +1,102 @@
+{
+    "intents":[
+        {
+            "classname":"greetings",
+            "in_chat":[
+                "Hello there", "Good Morning", "Good Afternoon", "Hi", "Hey", "Hello", "Hey there", "Hallo"
+            ],
+            "response":[
+                "Hey there, How can I help you?", "Hey there, Anything I can help you with?"
+            ]
+        },
+        {
+            "classname":"asking-name",
+            "in_chat":[
+                "Who are you?", "With whom I am talking with?", "What's your name?"
+            ],
+            "response":[
+                "My name is OpenChatFlow I'm here to help you"
+            ]
+        },
+        {
+            "classname":"asking-condition",
+            "in_chat":[
+                "How are you?", "How have you been??", "How's everything?", "How's it going?", "How are things going?", "What's up?", "Whassup?"
+            ],
+            "response":[
+                "Everything feels great","I'm fine, thank you for asking", "It's the best day of my life"
+            ]
+        },
+        {
+            "classname":"joke",
+            "in_chat":[
+                "joke", "I want a joke", "tell me about a joke", "I want something funny", "make me laugh", "I want to laugh"
+            ],
+            "response":[
+                "When the window fell into the incinerator, it was a pane in the ash to retrieve.",
+                "What's a pirate's favorite letter? It be the Sea",
+                "How do you count cows? A 'Cow'culator",
+                "Did you hear about the guy whose whole left side was cut off? He's all right now.",
+                "My friend's bakery burned down last night. Now his business is toast.",
+                "Two peanuts were walking down the street. One was a salted."
+            ]
+        },
+        {
+            "classname":"asking-time",
+            "in_chat":[
+                "What time is it?", "time", "clock", "clock's", "What time is it now?", "Day", "What day is today?"
+            ],
+            "response":[
+                "act.date_time"
+            ]
+        },
+        {
+            "classname":"what-is-cls",
+            "in_chat":[
+                "tell me about machine learning", "what is machine learning", "what is artificial intelligence", "what is computer vision", "I want to know about nlp", "I want to know about transformers", "I want to know about CNN", "artificial intelligence", "machine learning", "computer vision", "supervised learning"
+            ],
+            "response":[
+                "act.what_is_cls"
+            ]
+        },
+        {
+            "classname":"gratitude",
+            "in_chat":[
+                "thank you", "thank you so much", "appreciate it"
+            ],
+            "response":[
+                "always happy to help you"
+            ]
+        },
+        {
+            "classname":"buying-action-category-level",
+            "in_chat":[
+                "I want to buy some foods", "I want to buy some drinks", "I need foods", "I need drinks", "I want food", "I need food",
+                "do you have some food?", "I want to order some food", "I want to know your menu"
+            ],
+            "response":[
+                "act.buying-action-category-level"
+            ]
+        },
+        {
+            "classname":"buying-action-product-level",
+            "in_chat":[
+                "I want to buy fried rice, fried chicken and iced tea", "I want 2 fried rice, 2 fried chicken with cheese sauce", "give me orange juice and mango juice", "I need mango juice", "I want orange juice", 
+                "I want to order fried rice, fried chicken and iced tea", "I want to order mango juice"
+            ],
+            "response":[
+                "act.buying-action-category-level"
+            ]
+        }
+    ],
+    "entities":[
+        {
+            "classname":"__CATEGORY_PRODUCT__",
+            "texts": ["food","drink","snack", "sauce"]
+        },
+        {
+            "classname":"__PRODUCT__",
+            "texts": ["fried rice", "ice_tea", "fried chicken", "fried fries", "orange juice", "mango juice", "chicken nuggets", "cheese sauce", "soy sauce"]
+        }
+    ]
+}
