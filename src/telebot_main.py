@@ -14,6 +14,7 @@ DATA_PATH = os.getenv("DATA_PATH","data/data.json")
 API_KEY = os.getenv("API_KEY")
 bot = telebot.TeleBot(API_KEY)
 
+
 def init():
     training_data = json.load(open(DATA_PATH))
     chatbot_data = MyChatbotData(training_data)
