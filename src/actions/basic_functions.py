@@ -3,7 +3,8 @@ import wikipedia
 
 
 def date_time():
-    return datetime.datetime.now()
+    date = str(datetime.datetime.now()).split(' ')
+    return f"current date is {date[0]} and current time is {date[1]}"
 
 
 def what_is_cls(query):
