@@ -1,6 +1,6 @@
 from engine.chabot_data import MyChatbotData
 from engine.chatbot_engine import get_pred, get_xs_ys, train, remove_punctuation, UNK
-from actions.basic_functions import get_actions
+from actions import get_actions
 
 import json
 import os
