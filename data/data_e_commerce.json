@@ -15,7 +15,7 @@
                 "Who are you?", "With whom I am talking with?", "What's your name?"
             ],
             "response":[
-                "My name is OpenChatFlow I'm here to help you"
+                "My name is BotAssistant I'm here to help you"
             ]
         },
         {
@@ -92,11 +92,23 @@
     "entities":[
         {
             "classname":"__CATEGORY_PRODUCT__",
-            "texts": ["food","drink","snack", "sauce"]
+            "texts": ["food","drink","snack", "sauce", "menu"]
         },
         {
-            "classname":"__PRODUCT__",
-            "texts": ["fried rice", "ice_tea", "fried chicken", "fried fries", "orange juice", "mango juice", "chicken nuggets", "cheese sauce", "soy sauce"]
+            "classname":"__FOOD__",
+            "texts": ["fried rice", "fried chicken", "chicken nuggets"]
+        },
+        {
+            "classname":"__DRINK__",
+            "texts": ["ice_tea", "orange juice","mango juice"]
+        },
+        {
+            "classname":"__SNACK__",
+            "texts": ["fried fries"]
+        },
+        {
+            "classname":"__SAUCE__",
+            "texts": ["cheese sauce","soy sauce"]
         }
     ]
 }
